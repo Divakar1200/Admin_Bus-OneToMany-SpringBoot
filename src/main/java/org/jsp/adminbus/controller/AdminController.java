@@ -24,12 +24,12 @@ public class AdminController {
 	}
 	
 	@PutMapping("/admins")
-	public ResponseEntity<ResponseStructure<Admin>> updateMerchant(@RequestBody Admin admin) {
+	public ResponseEntity<ResponseStructure<Admin>> updateAdmin(@RequestBody Admin admin) {
 		return adminService.updateAdmin(admin);
 	}
 	
 	@GetMapping("/admins/{id}")
-	public ResponseEntity<ResponseStructure<Admin>> findUserById(@PathVariable int id) {
+	public ResponseEntity<ResponseStructure<Admin>> findAdminById(@PathVariable int id) {
 		return adminService.findAdminById(id);
 	}
 	
