@@ -26,7 +26,7 @@ public class BusController {
 	}
 	
 	@PutMapping("/buses")
-	public ResponseEntity<ResponseStructure<Bus>> updateProduct(@RequestBody Bus bus) {
+	public ResponseEntity<ResponseStructure<Bus>> updateBus(@RequestBody Bus bus) {
 		return busService.updateBus(bus);
 	}
 	
